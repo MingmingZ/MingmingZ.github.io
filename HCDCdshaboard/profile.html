@@ -120,7 +120,7 @@
                 <div class="row">
 					<div class="form-group" id="ctaselect">
                       <select id="cta" class="form-control">
-                           	<option selected disabled>Search / Select Neighborhood</option>
+                           	<option selected disabled>Select Neighborhood</option>
                             <option value="K130">1960 / Cypress Creek Central</option>
 							<option value="K131">1960 / Cypress Creek North</option>
 							<option value="K124">1960 / Cypress Creek South</option>
@@ -345,7 +345,12 @@
 		}).addTo(map); */
 		
 		var searchControl = new L.esri.Geocoding.geosearch({
-			maxResults:1	
+			providers:[
+				L.esri.Geocoding.arcgisOnlineProvider({
+					maxResults:1
+				})
+			],
+			zoomToResult:true	
 		}).addTo(map);
 		
 		var results = L.layerGroup().addTo(map);
