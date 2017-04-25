@@ -426,7 +426,7 @@
 		
 		
 		//info window
-		var info = L.control();
+		var info = L.control({position:'topleft'});
 
 		info.onAdd = function (map) {
     		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"

@@ -38,28 +38,28 @@ var maptourp = {
           placement: "bottom",
 		  arrowOffset: "center",
 		  xOffset:"center",
-		  zindex:500
+		  zindex:10000
         } ,
 		{
 		  title: "Go to another page",
           content: "You can click the buttons on the left to jump into other pages, for example, the Map page",
           target: "mapbtn",
           placement: "right",
-		  zindex:500
+		  zindex:10000
         } ,
         {
           title: "Need more guidence?",
           content: 'Check FAQ "How to use the tool"',
           target: "FAQ",
           placement: "right",
-		  zindex:500
+		  zindex:10000
         } ,		
         {
           title: "Show tutorial again",
           content: "Click this button to show tutorial again",
           target: "tutorial",
           placement: "right",
-		  zindex:500
+		  zindex:10000
         } 				
       ],
 		  showPrevButton: true
