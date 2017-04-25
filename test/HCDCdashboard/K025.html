@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HCDC</title>
+    
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    
+    
+     <style>
+    .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+</style>
+  
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="index.html">Houston Community Data Connections Dashboard</a>-->
+            </div>
+            <!-- Top Menu Items -->
+ 			<ul class="nav navbar-left top-nav">
+				<a href="https://kinder.rice.edu/" target="_blank"><img src="img/Rice-I-Kinder-Institute-logo.png" alt="Rice" style="height:43px"/></a>
+            </ul>
+            <a class="navbar-brand" href="index.html">Houston Community Data Connections Dashboard</a>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                  <li>
+                        <a href="index.html"><i class="fa fa-fw fa-table"></i> Home</a>
+                  </li>
+                  <li> <a href="Map.html"><em class="fa fa-fw fa-globe"></em> Map</a> </li>
+                  <li  class="active">
+                        <a href="profile.html"><i class="fa fa-fw fa-table"></i> Community Profile</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-fw fa-send-o"></i> Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html"><i class="fa fa-fw fa-question-circle"></i> Need Help?</a>
+                    </li>
+                   
+                    
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+              <div class="row">
+                   
+                   <div class="col-lg-12">
+                   <h1 class="page-header">
+                     Montrose <small>Profile 2015</small>
+                   </h1>
+                   </div>
+               
+                </div>
+                 
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-users fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">86,629</div>
+                                        <div>Population</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-home fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">47,281</div>
+                                        <div>Households</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-money fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">10.3%</div>
+                                        <div>Person in Poverty</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-briefcase fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">3.3%</div>
+                                        <div>Population unemployed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                 	
+                 	
+                <div class="row">
+               	    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Race and Ethnicity</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="highbarchart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Age Demographics</h3>
+                            </div>
+                            <div class="panel-body">
+                              <div id="highpiechart"></div>
+                      		</div>
+                        </div>
+                    </div>
+                	
+                </div> 	
+                 	
+                  	
+                  	<div class="panel-group" id="accordion">
+                  	
+                  	<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">View the full profile</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                   <div class="col-lg-12">
+                     <h2>Montrose Profile</h2>
+                     <div class="table-responsive">
+                            <table class="table table-hover table-striped" data-search="true">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Indicator</th>
+                                        <th>Value</th>
+                                        <th>Harris County</th>
+                                        <th>Houston City</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>General</td>
+                                        <td>Population</td>
+                                        <td>86,629</td>
+                                        <td>4,356,362</td>
+                                        <td>2,217,706</td>
+                                    </tr>
+                                    <tr>
+                                        <td>General</td>
+                                        <td>Households</td>
+                                        <td>47,281</td>
+                                        <td>1,499,528</td>
+                                        <td>1,249,607</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Economic</td>
+                                        <td>Unemployment Rate</td>
+                                        <td>3.27%</td>
+                                        <td>7.50%</td>
+                                        <td>8.06%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Race and Ethnicity</td>
+                                        <td>% White Population</td>
+                                        <td>79.10%</td>
+                                        <td>63.1%</td>
+                                        <td>58.21%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Race and Ethnicity</td>
+                                        <td>% African American Population</td>
+                                        <td>7.59%</td>
+                                        <td>18.9%</td>
+                                        <td>23.07%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Race and Ethnicity</td>
+                                        <td>% Asian</td>
+                                        <td>7.85%</td>
+                                        <td>6.57%</td>
+                                        <td>6.41%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Race and Ethnicity</td>
+                                        <td>% Hispanic or Latino</td>
+                                        <td>15.84%</td>
+                                        <td>41.6%</td>
+                                        <td>52.4%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Age</td>
+                                        <td>% Under 18</td>
+                                        <td>10.66%</td>
+                                        <td>27.32%</td>
+                                        <td>25.32%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Age</td>
+                                        <td>% Over 65</td>
+                                        <td>9.88%</td>
+                                        <td>8.94%</td>
+                                        <td>9.59%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+                  
+                   </div>
+                   </div>
+                   
+                </div>
+                <!-- /.row -->
+             
+            <!-- page wraper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    
+    <script type="text/javascript">
+	Highcharts.chart('highbarchart', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: ''
+    },
+    xAxis: {
+        categories:[
+			'White Alone',
+            'African American Alone',
+            'Asian Alone',
+            'Hispanic or Latino'		
+		],
+    },
+	yAxis: {
+        title:{
+			text:'Percent of Total Population'
+		}
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y:.1f}%'
+            }
+        }
+    },		
+    series: [{
+        name: 'Race and Enthnicity',
+        data: [79.11,7.59,7.85,15.84]
+    }]
+});
+	
+		
+		
+	//age piechart
+	Highcharts.chart('highpiechart', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Age Group',
+        colorByPoint: true,
+        data: [{
+            name: 'Under 18 Years',
+            y: 10.66
+        }, {
+            name: '18 to 34 Years',
+            y: 38.19
+        }, {
+            name: '35 to 64 Years',
+            y: 41.26
+        }, {
+            name: '65 and Over',
+            y: 9.89
+        }]
+    }]
+});
+		
+	
+	</script>
+
+</body>
+
+</html>
